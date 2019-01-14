@@ -15,7 +15,7 @@ pipeline {
 	    stage ('copy') {
 		 steps {
 	         sh 'rm -rf /root/etc/puppetlabs/code/environments/production/modules/tomcat/files/*'
-		 sh 'mv /home/zippyops/jenkins/workspace/puppetupstream/java-sample-app/target/java-sample-app-1.0.0.war  /root/etc/puppetlabs/code/environments/production/modules/tomcat/files'
+		 sh 'mv /home/zippyops/jenkins/workspace/puppetupstream/java-sample-app/target/java-sample-app-1.0.0.war  /home/etc/puppetlabs/code/environments/production/modules/tomcat/files'
 		
 		
             }
