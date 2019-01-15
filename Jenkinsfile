@@ -1,15 +1,16 @@
-pipeline {
+peline {
     agent any
     stages {
         stage ('checkout') {
             steps {
-		checkout scm
+                checkout scm
             }
         }
         stage ('Build') {
             steps {
-                sh '${m2_home}/bin/mvn -f java-sample-app/pom.xml clean install' 
+                sh '${m2_home}/bin/mvn -f java-sample-app/pom.xml clean install'
             }
         }
     }
 }
+
